@@ -6,7 +6,6 @@ public class NextLevelController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Entrando akiii");
             GameManager.Instance.LoadNextLevel();
         }
 

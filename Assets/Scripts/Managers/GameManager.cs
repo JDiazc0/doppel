@@ -5,6 +5,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    [Header("UI References")]
+    public GameObject gameOverScreen;
+    public GameObject orbCounterScreen;
+
     private void Awake()
     {
         if (Instance == null)
@@ -20,7 +24,6 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("GameOverLose called! Restarting scene...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -51,7 +54,18 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("No more levels to load!");
+            Debug.Log("no más niveles");
+            ShowGameOverScreen();
         }
     }
+
+    private void ShowGameOverScreen()
+    {
+        if (gameOverScreen != null && orbCounterScreen != null)
+        {
+            orbCounterScreen.SetActive(false);
+            gameOverScreen.SetActive(true);
+        }
+    }
+
 }
