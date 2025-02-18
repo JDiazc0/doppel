@@ -18,16 +18,28 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
+    // Catapult mechanic
+    private bool isFreezed;
+    private Vector2 storedVelocity;
+    private float storedGravity;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         idleTimer = 0f;
         hasPlayedLongIdle = false;
+        storedGravity = rb.gravityScale;
     }
 
     void Update()
     {
+        if (isFreezed)
+        {
+            return;
+        }
+
         // Movement
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
@@ -69,7 +81,6 @@ public class PlayerController : MonoBehaviour
             animator.ResetTrigger("LongIdle");
         }
 
-        // Coyote time
         if (!isGrounded && rb.linearVelocity.y < 0)
         {
             animator.SetBool("isFalling", true);
@@ -79,7 +90,6 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isFalling", false);
         }
 
-        // Jump with coyote time
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -87,6 +97,28 @@ public class PlayerController : MonoBehaviour
 
         // Check ground
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+    }
+
+    public void FreezePlayer(bool freeze)
+    {
+        isFreezed = freeze;
+
+        if (freeze)
+        {
+            storedVelocity = rb.linearVelocity;
+            storedGravity = rb.gravityScale;
+            rb.linearVelocity = Vector2.zero;
+            rb.gravityScale = 0;
+        }
+        else
+        {
+            rb.gravityScale = storedGravity;
+        }
+    }
+
+    public bool IsFreezed()
+    {
+        return isFreezed;
     }
 
     private void OnDrawGizmosSelected()

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4908423433969321489}
   - component: {fileID: 2395373737844063428}
   - component: {fileID: 1845788316971434717}
+  - component: {fileID: 1732232365313262398}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  jumpForce: 6.5
+  jumpForce: 5
   longIdleDelay: 5
   groundCheck: {fileID: 2200174499220672234}
   groundCheckRadius: 0.2
@@ -196,8 +197,27 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1732232365313262398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538024007041559728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9570c2bc10567a24ca890aee83ae7e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 4908423433969321489}
+  rayPrefab: {fileID: 4822580454931235651, guid: 24725e0d52c1616439bb1be795bfefbd, type: 3}
+  raySpeed: 1
+  maxRayDistance: 2.2
+  rotationSpeed: 45
+  impulseMultiplier: 3.2
+  unfreezeDelay: 0.5
 --- !u!1 &3662665422975886537
 GameObject:
   m_ObjectHideFlags: 0
