@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class OrbManager : MonoBehaviour
 {
@@ -10,15 +11,18 @@ public class OrbManager : MonoBehaviour
     private int totalOrbs;
     private int orbsCollected;
 
+    public UnityEvent OnAllOrbsCollected = new UnityEvent();
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 
@@ -35,7 +39,7 @@ public class OrbManager : MonoBehaviour
         UpdateOrbText();
         if (orbsCollected >= totalOrbs)
         {
-            GameManager.Instance.AllOrbsCollected();
+            OnAllOrbsCollected.Invoke();
         }
     }
 

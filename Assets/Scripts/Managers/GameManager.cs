@@ -1,13 +1,10 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-
-    [Header("UI References")]
-    public GameObject gameOverScreen;
-    public GameObject orbCounterScreen;
 
     private void Awake()
     {
@@ -55,17 +52,6 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.Log("no más niveles");
-            ShowGameOverScreen();
         }
     }
-
-    private void ShowGameOverScreen()
-    {
-        if (gameOverScreen != null && orbCounterScreen != null)
-        {
-            orbCounterScreen.SetActive(false);
-            gameOverScreen.SetActive(true);
-        }
-    }
-
 }
