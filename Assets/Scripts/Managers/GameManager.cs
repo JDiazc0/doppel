@@ -49,9 +49,23 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(nextSceneIndex);
         }
-        else
-        {
-            Debug.Log("no más niveles");
-        }
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0; // Stop time
+        Debug.Log("Game Paused");
+    }
+
+    // Method to resume the game
+    public void ResumeGame()
+    {
+        Time.timeScale = 1; // Resume time
+        Debug.Log("Game Resumed");
+    }
+
+    public void LoadSceneByName(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

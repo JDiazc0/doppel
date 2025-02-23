@@ -6,6 +6,7 @@ public class HazardRay : MonoBehaviour
     public float invisibleDuration = 2f;
     public float warningDuration = 2f;
     public float damageDuration = 3f;
+    public AudioClip RaySound;
 
     private Animator animator;
     private Collider2D hazardCollider;
@@ -29,8 +30,10 @@ public class HazardRay : MonoBehaviour
 
             animator.SetTrigger("StartDamage");
             hazardCollider.enabled = true;
+            AudioManager.Instance.PlaySFX(RaySound);
             yield return new WaitForSeconds(damageDuration);
 
+            AudioManager.Instance.StopSFX();
             animator.SetTrigger("StartInvisible");
             hazardCollider.enabled = false;
         }

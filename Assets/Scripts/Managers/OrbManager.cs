@@ -10,7 +10,6 @@ public class OrbManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI orbText;
     private int totalOrbs;
     private int orbsCollected;
-
     public UnityEvent OnAllOrbsCollected = new UnityEvent();
 
     private void Awake()
@@ -18,7 +17,6 @@ public class OrbManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(this.gameObject);
         }
         else
         {

@@ -173,3 +173,4 @@ MonoBehaviour:
   invisibleDuration: 2
   warningDuration: 2
   damageDuration: 3
+  RaySound: {fileID: 8300000, guid: 3dffdc566e9baaf469090b73bf220e04, type: 3}
