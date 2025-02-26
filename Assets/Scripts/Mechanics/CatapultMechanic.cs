@@ -18,7 +18,7 @@ public class CatapultMechanic : MonoBehaviour
     private float rayDistance = 1f;
     private float rayAngle = 0f;
     private bool isActive = false;
-
+    private bool isOnCooldown = false;
     void Start()
     {
         rayInstance = Instantiate(rayPrefab, playerController.transform.position, Quaternion.identity);
@@ -46,11 +46,11 @@ public class CatapultMechanic : MonoBehaviour
             UpdateRay();
         }
 
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X) && !isOnCooldown)
         {
             Activate();
         }
-        if (Input.GetKeyUp(KeyCode.X))
+        if (Input.GetKeyUp(KeyCode.X) && !isOnCooldown && isActive)
         {
             Deactivate();
         }
@@ -73,18 +73,20 @@ public class CatapultMechanic : MonoBehaviour
         rayAngle = 0f;
 
         StartCoroutine(UnfreezePlayer());
+
+        isOnCooldown = true;
     }
 
     IEnumerator UnfreezePlayer()
     {
         yield return new WaitForSeconds(unfreezeDelay);
         playerController.FreezePlayer(false);
+        isOnCooldown = false;
     }
 
     void UpdateRay()
     {
         Vector2 rayDirection = Quaternion.Euler(0, 0, rayAngle) * Vector2.up;
-        Vector2 rayEndPosition = (Vector2)playerController.transform.position + rayDirection * rayDistance;
 
         rayInstance.transform.position = (Vector2)playerController.transform.position + rayDirection * (rayDistance / 2f);
         rayInstance.transform.localScale = new Vector3(1, rayDistance, 1);

@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 23c4c0517d6bc5b46a3a7abc371ede8c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4932792689765097020
+    second: "Presione \u201CX\u201D para impulsarse_0"
+  - first:
+      213: 432247912273296722
+    second: "Presione \u201CX\u201D para impulsarse_1"
+  - first:
+      213: 3552540317973954916
+    second: "Presione \u201CX\u201D para impulsarse_2"
+  - first:
+      213: 1994473847361616996
+    second: "Presione \u201CX\u201D para impulsarse_3"
+  - first:
+      213: -4719579264213006892
+    second: "Presione \u201CX\u201D para impulsarse_4"
+  - first:
+      213: 6579681805792730744
+    second: "Presione \u201CX\u201D para impulsarse_5"
+  - first:
+      213: 2289156612188541550
+    second: "Presione \u201CX\u201D para impulsarse_6"
+  - first:
+      213: 4195764456957952876
+    second: "Presione \u201CX\u201D para impulsarse_7"
+  - first:
+      213: 6625624922897356183
+    second: "Presione \u201CX\u201D para impulsarse_8"
+  - first:
+      213: 8595875344559464710
+    second: "Presione \u201CX\u201D para impulsarse_9"
+  - first:
+      213: 5019307363420860641
+    second: "Presione \u201CX\u201D para impulsarse_10"
+  - first:
+      213: -4148846504894574386
+    second: "Presione \u201CX\u201D para impulsarse_11"
+  - first:
+      213: -445658271742402254
+    second: "Presione \u201CX\u201D para impulsarse_12"
+  - first:
+      213: -4826163318499724084
+    second: "Presione \u201CX\u201D para impulsarse_13"
+  - first:
+      213: 7170466327757440930
+    second: "Presione \u201CX\u201D para impulsarse_14"
+  - first:
+      213: -6522755950920102031
+    second: "Presione \u201CX\u201D para impulsarse_15"
+  - first:
+      213: 3596125613097345399
+    second: "Presione \u201CX\u201D para impulsarse_16"
+  - first:
+      213: 2070941552459607573
+    second: "Presione \u201CX\u201D para impulsarse_17"
+  - first:
+      213: -9016421869575981468
+    second: "Presione \u201CX\u201D para impulsarse_18"
+  - first:
+      213: 8397499874499399364
+    second: "Presione \u201CX\u201D para impulsarse_19"
+  - first:
+      213: 3377572962595486302
+    second: "Presione \u201CX\u201D para impulsarse_20"
+  - first:
+      213: -3252151134990174143
+    second: "Presione \u201CX\u201D para impulsarse_21"
+  - first:
+      213: 8935623041025227417
+    second: "Presione \u201CX\u201D para impulsarse_22"
+  - first:
+      213: 5046924549435724788
+    second: "Presione \u201CX\u201D para impulsarse_23"
+  - first:
+      213: 8851839089570624570
+    second: "Presione \u201CX\u201D para impulsarse_24"
+  - first:
+      213: 3413689443415895119
+    second: "Presione \u201CX\u201D para impulsarse_25"
+  - first:
+      213: 4701483011822276471
+    second: "Presione \u201CX\u201D para impulsarse_26"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Presione \u201CX\u201D para impulsarse_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7361
+        height: 1965
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c168e70f233b8bb0800000000000000
+      internalID: -4932792689765097020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: acfac3d2b997166479ab350349911e9d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Presione \u201CX\u201D para impulsarse_0": -4932792689765097020
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
